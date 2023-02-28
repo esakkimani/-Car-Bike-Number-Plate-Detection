@@ -1,1 +1,6 @@
-a
+First Create a GUI to capture image from webcamera and store it in a folder
+Next develop the code to open image and display
+Then locate the Number plate using rectangle tool and crop the image
+Extract the Numbers from the Cropped Image
+Next compare it with the dataset whether to check it exists or not
+Finally print the details.
