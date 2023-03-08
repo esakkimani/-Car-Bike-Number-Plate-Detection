@@ -1,0 +1,178 @@
+<html>
+<head>
+<!--    <script src="index.js"></script>-->
+<!--    <link rel="stylesheet" href="templates\index.css">-->
+    <style>
+        html{
+    background-color: #ebebeb;
+    margin: 2px;
+    padding: 0px;
+}
+.menu_container{
+    background-color: azure;
+}
+.project_Title{
+    color:darkmagenta;
+    font-family: system-ui;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.project_Title:hover{
+    color: rgb(188, 9, 146);
+
+}
+.horizontal_line{
+    width: auto;
+    height: 30px;
+    background-color: azure;
+}
+.horizontal_line1{
+    width: auto;
+    height: 3px;
+    margin-top: -10px;
+    background-color: cadetblue;
+}
+.signup_form{
+    border-radius: 7px;
+    background-color: floralwhite;
+    padding: 63px;
+    position: absolute;
+}
+.scanner_container{
+    position: absolute;
+    left: 165px;
+    top: 455px;
+}
+.btn_scanner{
+    padding: 30px;
+    border-radius: 69px;
+    border: 3px cadetblue;
+    font-size: 23px;
+    font-family: system-ui;
+    cursor: pointer;
+    border-style: solid;
+    font-weight: bold;
+    position: fixed;
+    left: 497px;
+    bottom: 100px;
+}
+.btn_scanner:hover{
+    background-color: aliceblue;
+}
+.camera_image{
+    height: 200px;
+    /* border-radius: 10px; */
+    border: 3px solid cadetblue;
+    width: 200px;
+    border-radius: 12px;
+    filter: url();
+    opacity: 108%;
+    position: relative;
+    left: -84%;
+    top: -117px;
+}
+.image_container{
+    position: absolute;
+    left: 172px;
+    top: 205px;
+}
+.page_container{
+    position: absolute;
+    align-items: center;
+    width: 500px;
+    left: 500px;
+}
+.color{
+    width: 100px;
+    height: 3px;
+    color:palevioletred ;
+}
+ul{
+    position: fixed;
+    top: 8%;
+    left: 70%;
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: darkslateblue;
+    font-family: system-ui;
+}
+.fineDetails{
+    margin: 15px;
+    text-decoration: none;
+}
+.fineDetails:hover{
+    color: rgba(112, 96, 216, 0.692);
+}
+.about:hover{
+    color: rgba(112, 96, 216, 0.692);
+}
+.about{
+    text-decoration: none;
+}
+.loadFineDetails{
+    display: none;
+}
+    </style>
+    <title>Intelligent Transportation System</title>
+</head>
+<body>
+    <div class="menu_container">
+      <h1 class="project_Title" >Intelligent Transportation System</h1>
+      <div class="horizontal_line1"></div>
+      <div class="horizontal_line"></div>
+      <div class="options">
+        <ul>
+          <li class="option1" ><a href="" id="fineDetails" onlclick="demo()" class="fineDetails">Fine Details</a></li>
+          <li class="option2" name="About"><a  href="/scan_image/" class="about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="loadFineDetails" id="loadFineDetails">
+        <input type="text"><br><br>
+        <button class="btn_search">Search</button><br><br>
+        <table border="3px" class="FineTable">
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </table>
+
+    </div>
+    <!-- <div class="signup_form">
+      <label class="Sign_label"> Sign Up </label><br><br>
+      <input type="text" name="" id="username" placeholder="username"><br><br>
+      <input type="email" name="" id="email" placeholder="enter your email"><br><br>
+      <input type="password" name="" id="password" placeholder="Type a password"><br><br>
+      <input type="password" name="" id="confirm_password" placeholder="Type a  confirm password"><br><br>
+      <button class="btn_signup">Sign up</button>
+    </div> -->
+    <div class="page_container">
+    <div class="image_container">
+      <img src="cam.jpg" alt="camera"  class="camera_image">
+    </div>
+    <div class="scanner_container">
+        <button class="btn_scanner">Click to Scan</button>
+      </div>
+    </div>
+</body>
+<script>
+    function demo(){
+        document.getElementById("loadFineDetails").style.display = "block";
+    }
+</script>
+</html>
